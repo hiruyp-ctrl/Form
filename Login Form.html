@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style type="text/css">
+body {
+background-color: orange;
+background-repeat: no-reapeat;
+background-attachment: fixed;
+background-size: cover;
+color: white;}
+#form{ animation: animation_name 5s infinite;
+
+}
+@-webkit-keyframes animation_name { from {
+background-color: green;
+} to {
+background-color: #003366;}
+
+from {
+border: 3px solid green;}
+to{
+border: 10px dotted red;
+border-size: 200px;}
+from { box-shadow: 1px 1px 1px green;
+} to { box-shadow: 15px 15px 10px gree}
+}
+.myButton {
+background-color: #4CAF;
+padding: 10px 20px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.3s;
+}
+fieldset {
+background-color: pink;
+color: #333;
+box-shadow: 10px 10px 10px red;
+border-radius: 15px;}
+.mybutton:hover {
+background-color: white;
+transform: scale(1.05)
+}
+::placeholder {
+color: purple;
+background-color: #4CAF;}
+
+
+</style>
+</head>
+<body>
+<div id="form">
+        <fieldset id="fieldset">      
+          <legend> LOGIN</legend> 
+            <label>Name</label>
+            <input type="text" class="name"   placeholder="enter your name" >
+  <br><br><br>
+                <label>Age</label>
+                <input type="text" class="age" placeholder="enter your age">
+  <br> <br><br>      
+            <label for="sex">Gender</label>
+<br>
+       Male :
+       <input type="radio" class="Gender" value="Male" name="sex" id="sex1">
+       Female :
+       <input type="radio" class="Gender" value="Female" name="sex" id="sex1">
+<br><br><br>
+     <label for="password">   Password :</label>
+         <input type="password" minlength="6" maxlength="12" 
+        id="myInput" placeholder="enter your password" name="password">
+
+            <input type="checkbox" onclick="togglePassword()"> 
+            <font size="3px"> Show</font>
+   <br><br><br>
+        <label>Country</label>
+               <select>
+                     <option>ETHIOPIA</option>
+                     <option>USA</option>
+                     <option>BRITIAN</option>
+                </select>
+      <br><br><br>
+         <button type="submit" class="myButton"><strong>Send Information</strong></button>
+         <br><br>
+         <button onclick="location.reload()">Reload</button>
+</fieldset>
+<br>
+<br>
+
+<script>
+function togglePassword() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</div>
+
+</body>
+</html>
+</html>
